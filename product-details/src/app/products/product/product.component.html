@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+		<div class="offset-md-4 col-md-4">
+			<div class="card" style="width: 21rem;">
+			  <div style="width:95%; display: inline-block;" class="card-title"><span>{{gmList.prdid}}</span>   <h4>{{gmList.name}}</h4> </div>
+			  <img [src]="gmList.imageUrl" alt="Card image cap" class="product-image">
+			  <div class="card-body">
+				<div><span *ngFor="let star of starRatings"><i class="far fa-star red"></i></span> <span class="red">Special Offer: </span><span >{{gmList.price}}</span></div>
+				<p class="card-text">{{gmList.desc}}</p>
+				<button [disabled]="!gmList.availability" class="btn btn-primary">Add To Cart</button>
+			  </div>
+			</div>
+		</div>
+  </div>
+  <div class="row">
+    <div class="offset-md-4 col-md-4 mt25">
+      <button class="btn btn-primary" (click)="gotoHome()">Goto Home</button>
+    </div>
+  </div>
+</div>
