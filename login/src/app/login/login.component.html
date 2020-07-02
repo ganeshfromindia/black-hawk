@@ -1,0 +1,74 @@
+<div class="login-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Company Logo" />
+        </div>
+        <form
+          class="form-container"
+          [formGroup]="loginForm"
+          (ngSubmit)="onSubmit()"
+        >
+          <div formGroupName="userData">
+            <div class="wrap-input100 validate-input">
+              <input
+                class="input100"
+                type="text"
+                formControlName="username"
+                placeholder="Username"
+              />
+              <div
+                class="error-message"
+                *ngIf="
+                  !loginForm.get('userData.username').valid &&
+                  loginForm.get('userData.username').touched
+                "
+              >
+                <span
+                  *ngIf="loginForm.get('userData.username').errors['required']"
+                  >This field is required!</span
+                >
+                <span
+                  *ngIf="loginForm.get('userData.username').errors['pattern']"
+                  >Username must be alphabetical</span
+                >
+              </div>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+              <input
+                id="password-field"
+                class="input100"
+                type="password"
+                formControlName="pass"
+                placeholder="Password"
+              />
+              <i class="fas fa-eye-slash toggleEye" (click)="toggleEye()"></i>
+              <div
+                class="error-message"
+                *ngIf="
+                  !loginForm.get('userData.pass').valid &&
+                  loginForm.get('userData.pass').touched
+                "
+              >
+                <span *ngIf="loginForm.get('userData.pass').errors['required']"
+                  >This field is required!</span
+                >
+                <span *ngIf="loginForm.get('userData.pass').errors['pattern']"
+                  >The password must be min 8 and max 15 characters with 1
+                  numeric, 1 special, 1 small and 1 upper letter
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="container-login100-form-btn">
+            <button class="login100-form-btn" [disabled]="!loginForm.valid">
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
