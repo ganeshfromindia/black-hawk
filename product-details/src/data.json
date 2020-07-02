@@ -1,0 +1,10 @@
+[
+    {"prdid": "BN45263", "imageUrl": "assets/images/1.jpg", "name": "Barbeque Nation", "stars": 4, "desc": "Yummmmmy Pasta Buy 1 Get 1 Available", "price" : "$44.99", "availability" : true },
+    {"prdid": "TN45264", "imageUrl": "assets/images/2.jpg", "name": "Tasty Nation", "stars": 3, "desc": "Big Burger Buy 1 Get 1 Available", "price" : "$54.99", "availability" : true },
+    {"prdid": "FJ45265", "imageUrl": "assets/images/3.jpg", "name": "Food Junkie", "stars": 4, "desc": "Sizzling Sizzler Buy 1 Get 1 Available", "price" : "$49.99", "availability" : true },
+    {"prdid": "MI45266", "imageUrl": "assets/images/4.jpg", "name": "Mock It", "stars": 2, "desc": "Tango Mexican Buy 1 Get 1 Available", "price" : "$74.99", "availability" : true },
+    {"prdid": "BN45267", "imageUrl": "assets/images/1.jpg", "name": "Barbeque Nation", "stars": 4, "desc": "Yummmmmy Pasta Buy 1 Get 1 Soon Coming", "price" : "$39.99", "availability" : false },
+    {"prdid": "TN45268", "imageUrl": "assets/images/2.jpg", "name": "Tasty Nation", "stars": 3, "desc": "Big Burger Buy 1 Get 1 Soon Coming", "price" : "$49.99", "availability" : false },
+    {"prdid": "FJ45269", "imageUrl": "assets/images/3.jpg", "name": "Food Junkie", "stars": 4, "desc": "Sizzling Sizzler Buy 1 Get 1 Soon Coming", "price" : "$69.99", "availability" : false },
+    {"prdid": "MI45270", "imageUrl": "assets/images/4.jpg", "name": "Mock It", "stars": 2, "desc": "Tango Mexican Buy 1 Get 1 Soon Coming", "price" : "$43.99", "availability" : false }
+]
